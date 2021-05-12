@@ -35,6 +35,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about',[AboutController::class,'index']); //เรียกแบบใหม่
-Route::get('/member',[MemberController::class,'index']); //เรียกแบบใหม่
-Route::get('/admin',[AdminController::class,'index']); //เรียกแบบใหม่
+Route::get('/about',[AboutController::class,'index'])->name('about'); //เรียกแบบใหม่
+Route::get('/member',[MemberController::class,'index'])->name('member'); //เรียกแบบใหม่
+Route::get('/admin',[AdminController::class,'index'])->name('admin')->middleware('check'); //เรียกแบบใหม่

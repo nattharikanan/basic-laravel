@@ -7,10 +7,14 @@
     <title>ยินดีต้อนรับ</title>
 </head>
 <body>
-    <p>หน้า About </p>
+    <p>เกี่ยวกับผู้พัฒนาเว็บไซต์ </p>
+    <p>ที่อยู่ : {{$city}}</p>
+    <p>เบอร์โทร : {{$tel}}</p>
+    <p>email : {{$email}}</p>
+    <p>แสดงข้อความ : {{$status}}</p>
     <a href="{{url('/')}}">Home</a>
-    <a href="{{url('/admin')}}">Admin</a>
-    <a href="{{url('member')}}">Member</a>
-    <a href="{{url('/about')}}">About</a>
+    <a href="{{route('admin')}}">Admin</a>
+    <a href="{{route('member')}}">Member</a>
+    <a href="{{route('about')}}">About</a>
 </body>
 </html>
